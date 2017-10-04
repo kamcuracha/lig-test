@@ -1,0 +1,32 @@
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 16px 0;
+
+    .footer-links {
+        float: left;
+    }
+
+    ul {
+        display: inline;
+        padding: 0;
+
+        > li {
+            display: inline-block;
+            padding-right: 20px;
+        }
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .footer-copy {
+        float: right;
+    }
+}

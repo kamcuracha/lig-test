@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -430,6 +431,66 @@ template {
    */
 [hidden] {
   display: none;
+}
+
+header {
+  border-top: solid 3px #e7ba2f;
+}
+
+header .logo-container {
+  text-align: center;
+  padding: 27px 0;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 16px 0;
+}
+
+footer .footer-links {
+  float: left;
+}
+
+footer ul {
+  display: inline;
+  padding: 0;
+}
+
+footer ul > li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-copy {
+  float: right;
+}
+
+body {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.container {
+  width: 1080px;
+  margin: auto;
+}
+
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
 }
 
 /*# sourceMappingURL=main.css.map */
