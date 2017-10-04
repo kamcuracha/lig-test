@@ -15,21 +15,21 @@ function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("slider");
     let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = slides.length} 
-    if (n < 1) {slideIndex = 1}
+    if (n > slides.length) { slideIndex = slides.length }
+    if (n < 1) { slideIndex = 1 }
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
+        slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block"; 
-    dots[slideIndex-1].className += " active";
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
 
 /* Scroll to top */
-$(document).ready(function() {
-    $('.btn-back2top').click(function(e){
+$(document).ready(function () {
+    $('.btn-back2top').click(function (e) {
         e.preventDefault();
         $('body, html').animate({
             scrollTop: 0

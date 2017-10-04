@@ -547,19 +547,6 @@ body {
   width: auto\9;
 }
 
-.slider-nav-outer2 {
-  display: table;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-}
-
-.slider-nav-outer1 {
-  display: table-cell;
-  vertical-align: middle;
-}
-
 .slider-nav-container {
   max-width: 1080px;
   width: 100%;
