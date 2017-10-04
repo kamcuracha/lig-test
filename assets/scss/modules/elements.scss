@@ -35,6 +35,25 @@ body {
     position: relative;
     margin: auto;
     overflow: hidden;
+        
+    .slider-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 21px;
+    }
 
     img {
         max-width: 100%;
@@ -59,7 +78,14 @@ body {
 
     &-container {
         max-width: 1080px;
+        width: 100%;
+        height: auto;
         margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
     
         .prev, .next {
             cursor: pointer;
@@ -97,6 +123,24 @@ body {
     .active, .dot:hover {
         background-color: #e7ba2f;
     }
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 .content {

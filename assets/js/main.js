@@ -1,3 +1,4 @@
+/* Slider */
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,3 +26,13 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block"; 
     dots[slideIndex-1].className += " active";
 }
+
+/* Scroll to top */
+$(document).ready(function() {
+    $('.btn-back2top').click(function(e){
+        e.preventDefault();
+        $('body, html').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+});
