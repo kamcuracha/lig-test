@@ -25,36 +25,40 @@
         </div>
     </header>
     <section class="slider-container-fluid clearfix">
-        <div class="slider fade">
-            <img src="assets/img/img-slider01.jpg" style="width: 100%" alt="">
-            <div class="slider-text">
-                <h1>キャッチコピーが入ります。</h1>
-                <p>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br> サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-                </p>
-            </div>
-        </div>
-
-        <div class="slider fade">
-            <img src="assets/img/img-slider02.jpg" style="width: 100%" alt="">
-            <div class="slider-text">
-                <h1>キャッチコピーが入ります。</h1>
-                <p>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br> サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-                </p>
-            </div>
-        </div>
-
-        <div class="slider fade">
-            <img src="assets/img/img-slider03.jpg" style="width: 100%" alt="">
-            <div class="slider-text">
-                <h1>キャッチコピーが入ります。</h1>
-                <p>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br> サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
-                </p>
+        <div class="slides-holder">
+            <div class="slides-holder-inner">
+                <div class="slider">
+                    <img src="assets/img/img-slider01.jpg" style="width: 100%" alt="">
+                    <div class="slider-text">
+                        <h1>キャッチコピーが入ります。</h1>
+                        <p>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br> サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="slider">
+                    <img src="assets/img/img-slider02.jpg" style="width: 100%" alt="">
+                    <div class="slider-text">
+                        <h1>キャッチコピーが入ります。</h1>
+                        <p>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br> サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="slider">
+                    <img src="assets/img/img-slider03.jpg" style="width: 100%" alt="">
+                    <div class="slider-text">
+                        <h1>キャッチコピーが入ります。</h1>
+                        <p>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br> サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="slider-nav-container">
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)"><i class="arrow left big"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="arrow right big"></i></a>
         </div>
 
         <div class="slider-pager-container">
@@ -252,7 +256,7 @@
             </aside>
         </div>
         <div class="container">
-            <a href="#" class="btn btn-back2top">&#770;</a>
+            <a href="#" onclick="scrollToTop(); return false;" class="btn btn-back2top" id="btn-back2top"><i class="arrow up"></i></a>
         </div>
     </section>
     <footer class="clearfix">
@@ -275,7 +279,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script>
-        window.jQuery || document.write('<script src="assets/js/vendor/jquery-3.2.1.min.js"><\/script>')
+         document.write('<script src="assets/js/vendor/jquery-3.2.1.min.js"><\/script>')
     </script>
     <script src="assets/js/main.js" async="async"></script>
 </body>

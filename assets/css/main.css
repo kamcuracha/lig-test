@@ -547,6 +547,24 @@ body {
   width: auto\9;
 }
 
+.slider {
+  width: 20%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides-holder {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides-holder-inner {
+  margin-left: 0;
+  width: 500%;
+  line-height: 0;
+}
+
 .slider-nav-container {
   max-width: 1080px;
   width: 100%;
@@ -585,7 +603,7 @@ body {
   cursor: pointer;
   height: 16px;
   width: 16px;
-  margin: 0 2px;
+  margin: 0 5px;
   background-color: #fff;
   border-radius: 50%;
   display: inline-block;
@@ -594,32 +612,6 @@ body {
 
 .slider-pager-container .active, .slider-pager-container .dot:hover {
   background-color: #e7ba2f;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .content {
@@ -701,9 +693,15 @@ article img {
 }
 
 .article-full-link .btn:after {
-  content: ">";
+  content: " ";
   float: right;
-  margin-right: 15px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  margin-top: 4px;
+  margin-right: 16px;
+  padding: 5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
 aside {
@@ -765,10 +763,45 @@ aside .banner-small {
 
 .btn-back2top {
   float: right;
-  color: #000;
-  font-size: 50px;
-  font-weight: 700;
+  padding: 10px 0;
   text-decoration: none;
+}
+
+i {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+i.big {
+  border-color: #fff;
+  border-width: 0 8px 8px 0;
+  padding: 13px;
+}
+
+i.big:hover {
+  opacity: 0.5;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=main.css.map */

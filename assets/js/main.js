@@ -1,9 +1,10 @@
 /* Slider */
 let slideIndex = 1;
+let slides = document.getElementsByClassName("slider");
+let dots = document.getElementsByClassName("dot");
 showSlides(slideIndex);
 
 function plusSlides(n) {
-    console.log('n is: ' + n);
     showSlides(slideIndex += n);
 }
 
@@ -13,26 +14,41 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("slider");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = slides.length }
-    if (n < 1) { slideIndex = 1 }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+
+    if (n > slides.length) { n = slideIndex = slides.length }
+    if (n < 1) { n = slideIndex = 1}
+
+    switch(n) {
+        case 1:
+            $(slides).animate({
+                left: '0%'
+            }, 300);
+            break;
+        case 2:
+            $(slides).animate({
+                left: '-20%'
+            }, 300);
+            break;
+        default:
+            $(slides).animate({
+                left: '-40%'
+            }, 300);
     }
+
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex - 1].style.display = "block";
+
     dots[slideIndex - 1].className += " active";
 }
 
-/* Scroll to top */
-$(document).ready(function () {
-    $('.btn-back2top').click(function (e) {
-        e.preventDefault();
-        $('body, html').animate({
-            scrollTop: 0
-        }, 1000);
-    });
-});
+/* Scroll Top */
+function scrollToTop() {
+    let timeOut;
+    if(document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+        window.scrollBy(0, -50);
+        timeOut = setTimeout('scrollToTop()', 10);
+
+    }
+    else clearTimeout(timeOut);
+}
