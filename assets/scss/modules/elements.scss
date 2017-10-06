@@ -217,6 +217,10 @@ article {
             transform: rotate(-45deg);
             -webkit-transform: rotate(-45deg);
         }
+
+        &:hover {
+            opacity: 0.9;
+        }
     }
 }
 
@@ -281,6 +285,11 @@ aside {
     float: right;
     padding: 10px 0;
     text-decoration: none;
+
+    &:hover i {
+        opacity: 0.9;
+        border-color: #e7ba2f;
+    }
 }
 
 i {

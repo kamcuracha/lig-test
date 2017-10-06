@@ -704,6 +704,10 @@ article img {
   -webkit-transform: rotate(-45deg);
 }
 
+.article-full-link .btn:hover {
+  opacity: 0.9;
+}
+
 aside {
   float: right;
   width: 310px;
@@ -765,6 +769,11 @@ aside .banner-small {
   float: right;
   padding: 10px 0;
   text-decoration: none;
+}
+
+.btn-back2top:hover i {
+  opacity: 0.9;
+  border-color: #e7ba2f;
 }
 
 i {
